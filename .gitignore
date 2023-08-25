@@ -30,3 +30,21 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.dbmdl
+*.jfm
+*.db
+*.opendb
+*.VC.db
+*.ipch
+*.pdb
+*.ilk
+*.iobj
+*~
+*.tmp

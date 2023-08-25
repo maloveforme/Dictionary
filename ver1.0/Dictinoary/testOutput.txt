@@ -1,0 +1,9 @@
+runner-up: 준우승
+cuboid: 직육면체
+comprehension: 이해, 파악, 구문
+stub: 완전히 구현되지 않은 함수나 메서드
+evenly: 균등하게, 나머지 없이
+orbit: 궤도, 공전
+correct: 보정하다
+leap day: 윤일
+extra day: 일반적이거나 예상되는 것보다 추가로 주어진 하루

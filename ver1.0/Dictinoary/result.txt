@@ -1,0 +1,11 @@
+��ȣ	����	�Է�	����
+0	comprehension	a	이해, 파악, 구문
+1	extra day	b	일반적이거나 예상되는 것보다 추가로 주어진 하루
+2	evenly	c	균등하게, 나머지 없이
+3	cuboid	d	직육면체
+4	leap day	e	윤일
+5	leap day	f	윤일
+6	orbit	g	궤도, 공전
+7	orbit	h	궤도, 공전
+8	evenly	j	균등하게, 나머지 없이
+9	orbit	k	궤도, 공전
