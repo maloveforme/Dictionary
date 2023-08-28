@@ -1,23 +1,24 @@
-#include "main.h"
-
-struct res
-{
-    std::string problem, input, answer;
-};
+ï»¿#include "main.h"
 
 int main()
 {
-    std::cout << "¿µ¾î ´Ü¾î ½ÃÇèÁö made by maloveforme\n";
-    std::cout << "¿µ¾î ´Ü¾î°¡ ³ª¿À¸é ´äÀ» ÀÔ·ÂÇÏ¼¼¿ä\n";
+    system("chcp 65001 > nul");
+    system("python GetNotionAPI.py");
+    system("cls");
 
-    system("python GetNotionAPI.py > output.txt");
+    int test_num;
+    std::cout << "ì˜ì–´ ë‹¨ì–´ ì‹œí—˜ì§€ made by maloveforme\n\n";
+    std::cout << "ì‹œí—˜ ì¹˜ê³ ìž í•˜ëŠ” ë‹¨ì–´ ê°œìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
+    std::cin >> test_num;
+    std::cin.clear();
+
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 generator(seed);
 
     std::vector<std::pair<std::string, std::string>> word_pairs;
     std::vector<std::string> answers;
     std::vector<int> word_index;
-    std::ifstream file("output.txt");
+    std::ifstream file("output.txt", std::ios::in);
 
     if (!file.is_open())
     {
@@ -25,11 +26,14 @@ int main()
         return 1;
     }
 
+    std::string content((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+    std::istringstream ss(content);
+
     json j;
 
     try
     {
-        file >> j;
+        ss >> j;
 
         if (!j.contains("results"))
         {
@@ -83,7 +87,7 @@ int main()
 
             std::string word = result["properties"]["Vocabulary"]["rich_text"][0]["plain_text"];
             std::string meaning = result["properties"]["meaning"]["rich_text"][0]["plain_text"];
-            word_pairs.push_back({ word, meaning.c_str()});
+            word_pairs.push_back({ word, meaning.c_str() });
         }
 
         if (word_pairs.empty())
@@ -99,33 +103,44 @@ int main()
         return 1;
     }
 
+    if (word_pairs.size() < test_num)
+    {
+        std::cout << "ë¬¸ì œê°€ ë¶€ì¡±í•©ë‹ˆë‹¤\n";
+        return 0;
+    }
+
+    std::cout << "ì˜ì–´ ë‹¨ì–´ê°€ ë‚˜ì˜¤ë©´ ë‹µì„ ìž…ë ¥í•˜ì„¸ìš”\n";
+    std::set<int> selected_index;
+
     int count = 0;
-    while (count != 10)
+    while (count != test_num)
     {
         std::uniform_int_distribution<int> distribution(0, word_pairs.size() - 1);
         int random_index = distribution(generator);
         std::string answer;
 
+        while (selected_index.find(random_index) != selected_index.end())
+            random_index = distribution(generator);
+        selected_index.insert(random_index);
+
         std::cout << word_pairs[random_index].first << ": ";
         std::getline(std::cin, answer);
         answers.push_back(answer);
+        std::cout << answer << "\n";
         word_index.push_back(random_index);
+
         count++;
     }
-    std::ofstream testFile("testOutput.txt");
 
-    for (const auto& pair : word_pairs) 
-        testFile << pair.first << ": " << pair.second << "\n";
-    
-    testFile.close();
+    std::ofstream result("result.txt");
 
-    std::ofstream result_file("result.txt");
+    result << "ë²ˆí˜¸\të¬¸ì œ\tìž…ë ¥\tì •ë‹µ\n";
+    for (int i = 0; i < test_num; ++i)
+        result << i << "\t" << word_pairs[word_index[i]].first << "\t" << answers[i] << "\t" << word_pairs[word_index[i]].second << "\n";
 
-    result_file << "¹øÈ£\t¹®Á¦\tÀÔ·Â\tÁ¤´ä\n";
-    for(int i = 0; i < 10; ++i)
-        result_file << i << "\t" << word_pairs[word_index[i]].first << "\t" << answers[i] << "\t" << word_pairs[word_index[i]].second << "\n";
-
-    result_file.close();
+    result.close();
     file.close();
+
+    system("notepad result.txt");
     return 0;
 }

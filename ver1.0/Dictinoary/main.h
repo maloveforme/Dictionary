@@ -13,9 +13,12 @@
 #include <random>
 #include <chrono>
 #include <sstream>
-#include <boost/locale.hpp>
 #include <locale>
-
+#include <algorithm>
+#include <set>
+#include <map>
+#include <Windows.h>
+#include <codecvt>
 
 using json = nlohmann::json;
 
