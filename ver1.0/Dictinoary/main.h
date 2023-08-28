@@ -7,18 +7,12 @@
 #include <vector>
 #include <utility>
 #include <cstdlib>
-#include <ctime>
-#include "json.hpp"
-#include <filesystem>
 #include <random>
 #include <chrono>
 #include <sstream>
-#include <locale>
-#include <algorithm>
 #include <set>
-#include <map>
 #include <Windows.h>
-#include <codecvt>
+#include "json.hpp"
 
 using json = nlohmann::json;
 

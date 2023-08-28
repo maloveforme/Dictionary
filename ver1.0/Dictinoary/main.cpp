@@ -1,16 +1,39 @@
 ﻿#include "main.h"
 
-int main()
+std::string getUtf8Input()
 {
-    system("chcp 65001 > nul");
+    HANDLE hConsole = GetStdHandle(STD_INPUT_HANDLE);
+    WCHAR buffer[1024];
+    DWORD numRead;
+
+    ReadConsoleW(hConsole, buffer, 1024, &numRead, NULL);
+    buffer[numRead - 1] = L'\0';  
+
+    int sizeNeeded = WideCharToMultiByte(CP_UTF8, 0, buffer, -1, NULL, 0, NULL, NULL);
+    std::string utf8String(sizeNeeded - 1, 0);  
+    WideCharToMultiByte(CP_UTF8, 0, buffer, -1, &utf8String[0], sizeNeeded, NULL, NULL);
+
+    while (!utf8String.empty() && (utf8String.back() == '\n' || utf8String.back() == '\r')) {
+        utf8String.pop_back();
+    }
+
+    return utf8String;
+}
+
+int main()
+{/*
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+    system("chcp 65001 > nul");*/
     system("python GetNotionAPI.py");
     system("cls");
 
     int test_num;
-    std::cout << "영어 단어 시험지 made by maloveforme\n\n";
-    std::cout << "시험 치고자 하는 단어 개수를 입력하세요: ";
+    std::cout << u8"영어 단어 시험지 made by maloveforme\n\n";
+    std::cout << u8"시험 치고자 하는 단어 개수를 입력하세요: ";
     std::cin >> test_num;
-    std::cin.clear();
+    std::cout << "\n";
+    std::cin.ignore();
 
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 generator(seed);
@@ -105,11 +128,11 @@ int main()
 
     if (word_pairs.size() < test_num)
     {
-        std::cout << "문제가 부족합니다\n";
+        std::cout << u8"문제가 부족합니다\n";
         return 0;
     }
 
-    std::cout << "영어 단어가 나오면 답을 입력하세요\n";
+    std::cout << u8"영어 단어가 나오면 답을 입력하세요\n";
     std::set<int> selected_index;
 
     int count = 0;
@@ -124,19 +147,20 @@ int main()
         selected_index.insert(random_index);
 
         std::cout << word_pairs[random_index].first << ": ";
-        std::getline(std::cin, answer);
+        answer = getUtf8Input();
         answers.push_back(answer);
-        std::cout << answer << "\n";
         word_index.push_back(random_index);
 
         count++;
     }
 
-    std::ofstream result("result.txt");
+    std::ofstream result("result.txt", std::ios::out | std::ios::binary);
+    unsigned char utf8BOM[] = { 0xEF, 0xBB, 0xBF };
+    result.write((char*)utf8BOM, sizeof(utf8BOM));
 
-    result << "번호\t문제\t입력\t정답\n";
+    result << u8"번호\t문제\t\t\t입력\t\t\t정답\n";
     for (int i = 0; i < test_num; ++i)
-        result << i << "\t" << word_pairs[word_index[i]].first << "\t" << answers[i] << "\t" << word_pairs[word_index[i]].second << "\n";
+        result << i << "\t" << word_pairs[word_index[i]].first << "\t\t\t" << answers[i] << "\t\t\t" << word_pairs[word_index[i]].second << "\n";
 
     result.close();
     file.close();
