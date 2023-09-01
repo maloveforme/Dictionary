@@ -1,4 +1,6 @@
 ﻿번호	문제			입력			정답
-0	cuboid			직육면체			직육면체
-1	stub			구현되지 않은 메서드			완전히 구현되지 않은 함수나 메서드
-2	orbit			직육면체			궤도, 공전
+0	correct			올바른			보정하다
+1	orbit			a			궤도, 공전
+2	corresponding			b			해당하는, 대응하는
+3	stub			c			완전히 구현되지 않은 함수나 메서드
+4	leap day			d			윤일

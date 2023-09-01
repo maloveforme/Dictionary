@@ -21,10 +21,10 @@ std::string getUtf8Input()
 }
 
 int main()
-{/*
+{
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
-    system("chcp 65001 > nul");*/
+    system("chcp 65001 > nul");
     system("python GetNotionAPI.py");
     system("cls");
 

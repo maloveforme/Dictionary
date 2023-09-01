@@ -1,0 +1,4 @@
+﻿문제			입력			정답
+comprehension			씨			이해, 파악, 구문
+extra day			에이			일반적이거나 예상되는 것보다 추가로 주어진 하루
+runner-up			비			준우승

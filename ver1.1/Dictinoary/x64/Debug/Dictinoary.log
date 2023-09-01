@@ -1,0 +1,9 @@
+﻿  main.cpp
+  test.cpp
+G:\github\Dictionary\ver1.1\Dictinoary\test.cpp(29,16): warning C4244: '초기화 중': '_Rep'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Rep=std::chrono::system_clock::rep
+          ]
+  코드를 생성하고 있습니다...
+  Dictinoary.vcxproj -> G:\github\Dictionary\ver1.1\x64\Debug\Dictinoary.exe
