@@ -5,6 +5,7 @@
 #include <string>
 #include <thread>
 
+// Notion API를 호출하기 위한 클래스
 class GetAPI
 {
 public:

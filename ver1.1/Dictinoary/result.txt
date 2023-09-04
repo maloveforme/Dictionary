@@ -1,4 +1,4 @@
 ﻿문제			입력			정답
-comprehension			씨			이해, 파악, 구문
-extra day			에이			일반적이거나 예상되는 것보다 추가로 주어진 하루
-runner-up			비			준우승
+cuboid			직육면체			직육면체
+leap day			윤일			윤일
+stub			임시 함수			완전히 구현되지 않은 함수나 메서드

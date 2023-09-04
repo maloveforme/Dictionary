@@ -1,0 +1,4 @@
+﻿문제			입력			정답
+evenly			a			균등하게, 나머지 없이
+leap day			b			윤일
+orbit			c			궤도, 공전

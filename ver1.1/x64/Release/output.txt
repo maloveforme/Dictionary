@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "19344799-5f67-455b-ad20-c3b6bb6f920b",
-            "created_time": "2023-08-25T09:22:00.000Z",
-            "last_edited_time": "2023-08-25T09:23:00.000Z",
+            "id": "00fb8dc8-916f-49f7-90ff-78ef12009f6e",
+            "created_time": "2023-08-31T23:25:00.000Z",
+            "last_edited_time": "2023-08-31T23:31:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "9cd96ef8-6862-4263-963c-12ef38dd471c"
@@ -22,15 +22,113 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-25",
-                        "end": null,
-                        "time_zone": null
+                "Vocabulary": {
+                    "id": "YZa~",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "corresponding",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "corresponding",
+                            "href": null
+                        }
+                    ]
+                },
+                "Definition": {
+                    "id": "\\WLO",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Similar in character, form, or function to something else.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Similar in character, form, or function to something else.",
+                            "href": null
+                        }
+                    ]
+                },
+                "meaning": {
+                    "id": "cRyE",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "해당하는, 대응하는",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "해당하는, 대응하는",
+                            "href": null
+                        }
+                    ]
+                },
+                "채점결과": {
+                    "id": "uR<S",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❌"
                     }
                 },
+                "ans": {
+                    "id": "title",
+                    "type": "title",
+                    "title": []
+                }
+            },
+            "url": "https://www.notion.so/00fb8dc8916f49f790ff78ef12009f6e",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "19344799-5f67-455b-ad20-c3b6bb6f920b",
+            "created_time": "2023-08-25T09:22:00.000Z",
+            "last_edited_time": "2023-08-25T13:26:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "9cd96ef8-6862-4263-963c-12ef38dd471c"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "9cd96ef8-6862-4263-963c-12ef38dd471c"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f4d95bf8-1943-49e1-ad87-770de8563e7c"
+            },
+            "archived": false,
+            "properties": {
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -61,7 +159,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "a\u00a0",
+                                "content": "a ",
                                 "link": null
                             },
                             "annotations": {
@@ -72,7 +170,7 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "a\u00a0",
+                            "plain_text": "a ",
                             "href": null
                         },
                         {
@@ -97,7 +195,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\u00a0who comes second in a\u00a0",
+                                "content": " who comes second in a ",
                                 "link": null
                             },
                             "annotations": {
@@ -108,7 +206,7 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\u00a0who comes second in a\u00a0",
+                            "plain_text": " who comes second in a ",
                             "href": null
                         },
                         {
@@ -133,7 +231,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\u00a0or\u00a0",
+                                "content": " or ",
                                 "link": null
                             },
                             "annotations": {
@@ -144,7 +242,7 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\u00a0or\u00a0",
+                            "plain_text": " or ",
                             "href": null
                         },
                         {
@@ -175,7 +273,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\uc900\uc6b0\uc2b9",
+                                "content": "준우승",
                                 "link": null
                             },
                             "annotations": {
@@ -186,17 +284,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\uc900\uc6b0\uc2b9",
+                            "plain_text": "준우승",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
@@ -229,15 +327,6 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-23",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -291,7 +380,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\uc9c1\uc721\uba74\uccb4",
+                                "content": "직육면체",
                                 "link": null
                             },
                             "annotations": {
@@ -302,17 +391,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\uc9c1\uc721\uba74\uccb4",
+                            "plain_text": "직육면체",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
@@ -345,15 +434,6 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-23",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -384,7 +464,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\u2022 The action or capability of understanding something.\n\u2022 (In programming context) A concise way of creating lists, dictionaries, sets, etc. in Python by embedding for loops and if statements inside the data structure's brackets.",
+                                "content": "• The action or capability of understanding something.\n• (In programming context) A concise way of creating lists, dictionaries, sets, etc. in Python by embedding for loops and if statements inside the data structure's brackets.",
                                 "link": null
                             },
                             "annotations": {
@@ -395,7 +475,7 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\u2022 The action or capability of understanding something.\n\u2022 (In programming context) A concise way of creating lists, dictionaries, sets, etc. in Python by embedding for loops and if statements inside the data structure's brackets.",
+                            "plain_text": "• The action or capability of understanding something.\n• (In programming context) A concise way of creating lists, dictionaries, sets, etc. in Python by embedding for loops and if statements inside the data structure's brackets.",
                             "href": null
                         }
                     ]
@@ -407,7 +487,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\uc774\ud574, \ud30c\uc545, \uad6c\ubb38",
+                                "content": "이해, 파악, 구문",
                                 "link": null
                             },
                             "annotations": {
@@ -418,17 +498,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\uc774\ud574, \ud30c\uc545, \uad6c\ubb38",
+                            "plain_text": "이해, 파악, 구문",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
@@ -461,15 +541,6 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-23",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -523,7 +594,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\uc644\uc804\ud788 \uad6c\ud604\ub418\uc9c0 \uc54a\uc740 \ud568\uc218\ub098 \uba54\uc11c\ub4dc",
+                                "content": "완전히 구현되지 않은 함수나 메서드",
                                 "link": null
                             },
                             "annotations": {
@@ -534,17 +605,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\uc644\uc804\ud788 \uad6c\ud604\ub418\uc9c0 \uc54a\uc740 \ud568\uc218\ub098 \uba54\uc11c\ub4dc",
+                            "plain_text": "완전히 구현되지 않은 함수나 메서드",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
@@ -577,15 +648,6 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-23",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -639,7 +701,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\uade0\ub4f1\ud558\uac8c, \ub098\uba38\uc9c0 \uc5c6\uc774",
+                                "content": "균등하게, 나머지 없이",
                                 "link": null
                             },
                             "annotations": {
@@ -650,17 +712,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\uade0\ub4f1\ud558\uac8c, \ub098\uba38\uc9c0 \uc5c6\uc774",
+                            "plain_text": "균등하게, 나머지 없이",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
@@ -693,15 +755,6 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-23",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -755,7 +808,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\uada4\ub3c4, \uacf5\uc804",
+                                "content": "궤도, 공전",
                                 "link": null
                             },
                             "annotations": {
@@ -766,17 +819,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\uada4\ub3c4, \uacf5\uc804",
+                            "plain_text": "궤도, 공전",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
@@ -809,15 +862,6 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-23",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -871,7 +915,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\ubcf4\uc815\ud558\ub2e4",
+                                "content": "보정하다",
                                 "link": null
                             },
                             "annotations": {
@@ -882,17 +926,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\ubcf4\uc815\ud558\ub2e4",
+                            "plain_text": "보정하다",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
@@ -925,15 +969,6 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-23",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -987,7 +1022,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\uc724\uc77c",
+                                "content": "윤일",
                                 "link": null
                             },
                             "annotations": {
@@ -998,17 +1033,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\uc724\uc77c",
+                            "plain_text": "윤일",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
@@ -1041,15 +1076,6 @@
             },
             "archived": false,
             "properties": {
-                "Created": {
-                    "id": "GgcZ",
-                    "type": "date",
-                    "date": {
-                        "start": "2023-08-23",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
                 "Vocabulary": {
                     "id": "YZa~",
                     "type": "rich_text",
@@ -1103,7 +1129,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "\uc77c\ubc18\uc801\uc774\uac70\ub098 \uc608\uc0c1\ub418\ub294 \uac83\ubcf4\ub2e4 \ucd94\uac00\ub85c \uc8fc\uc5b4\uc9c4 \ud558\ub8e8",
+                                "content": "일반적이거나 예상되는 것보다 추가로 주어진 하루",
                                 "link": null
                             },
                             "annotations": {
@@ -1114,17 +1140,17 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "\uc77c\ubc18\uc801\uc774\uac70\ub098 \uc608\uc0c1\ub418\ub294 \uac83\ubcf4\ub2e4 \ucd94\uac00\ub85c \uc8fc\uc5b4\uc9c4 \ud558\ub8e8",
+                            "plain_text": "일반적이거나 예상되는 것보다 추가로 주어진 하루",
                             "href": null
                         }
                     ]
                 },
-                "\ucc44\uc810\uacb0\uacfc": {
+                "채점결과": {
                     "id": "uR<S",
                     "type": "formula",
                     "formula": {
                         "type": "string",
-                        "string": "\u274c"
+                        "string": "❌"
                     }
                 },
                 "ans": {
