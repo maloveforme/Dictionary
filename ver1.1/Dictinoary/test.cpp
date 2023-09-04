@@ -1,8 +1,11 @@
 ﻿#include "test.h"
 
 Test::Test()
+	: _test_num(0),
+	_selected_index(),
+	_answers(),
+	_result()
 {
-	_test_num = 0;
 	// result.txt 파일 생성
 	_result.open("result.txt", std::ios::out | std::ios::binary);
 }
@@ -82,9 +85,8 @@ std::string Test::GetUTF8Input()
 	std::string utf8String(sizeNeeded - 1, 0);
 	WideCharToMultiByte(CP_UTF8, 0, buffer, -1, &utf8String[0], sizeNeeded, NULL, NULL);
 
-	while (!utf8String.empty() && (utf8String.back() == '\n' || utf8String.back() == '\r')) {
+	while (!utf8String.empty() && (utf8String.back() == '\n' || utf8String.back() == '\r')) 
 		utf8String.pop_back();
-	}
 
 	return utf8String;
 }

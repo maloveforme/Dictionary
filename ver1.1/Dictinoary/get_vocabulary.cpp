@@ -1,13 +1,19 @@
 #include "get_vocabulary.h"
 
-GetVocabulary::GetVocabulary() : _file("output.txt", std::ios::in)
+GetVocabulary::GetVocabulary()
+    : _file("output.txt", std::ios::in),
+    _j(),
+    _json_result(),
+    _ss(),
+    _word_pairs()
 {
-	// GetNotionAPI.py의 결과물인 output.txt 파일을 읽지 못했을 때
-	if (!_file.is_open())
-	{
-		std::cerr << "output.txt 파일을 열지 못했습니다.\n";
-		return;
-	}
+
+    // GetNotionAPI.py의 결과물인 output.txt 파일을 읽지 못했을 때
+    if (!_file.is_open())
+    {
+        std::cerr << "output.txt 파일을 열지 못했습니다.\n";
+        return;
+    }
 }
 
 GetVocabulary::~GetVocabulary()
